@@ -3,4 +3,4 @@
 SCRIPT="$1"
 shift # past script
 
-bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/bash/$SCRIPT.sh) "$@"
+bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/scripts/$SCRIPT.sh) "$@"

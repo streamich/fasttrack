@@ -1,18 +1,23 @@
 # fasttrack
 
-Create TypeScript project with one command.
-
 Install:
 
 ```shell
 bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/install.sh)
 ```
 
-Create default project:
+Create a TypeScript project:
 
 ```shell
 mkdir my-project && cd my-project
 fasttrack project-ts
+```
+
+
+## Usage
+
+```shell
+fastrack <script> [options]
 ```
 
 
@@ -22,7 +27,7 @@ fasttrack project-ts
 - [__Usage__](./docs/usage.md)
 
 
-## Features
+## `<scripts>`
 
 - Adds `package.json`
 - Adds README
