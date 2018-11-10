@@ -17,6 +17,10 @@ do
       shift # past argument
       shift # past value
       ;;
+      -h|--help)
+      HELP=true
+      shift # past argument
+      ;;
       *)
       shift # in case of unknown argument
       ;;
