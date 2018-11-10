@@ -36,7 +36,7 @@ fasttrack <script> --help
 ```
 
 - [`package`](./docs/package.md) &mdash; Creates `package.json`.
-- `readme` &mdash; Adds a README file.
+- [`readme`](./docs/readme-script.md) &mdash; Adds a README file.
 - `license` &mdash; Adds license to your projects.
 - `typescript` &mdash; Installs TypeScript in your project.
 - [`prettier`](./docs/prettier.md) &mdash; Adds Prettier to your project.
