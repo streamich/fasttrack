@@ -40,7 +40,7 @@ done
 set -- "${POSITIONAL[@]}"
 
 if [ "$HELP" = true ] ; then
-  echo "fasttrack-cli gitignore [options]"
+  echo "fasttrack gitignore [options]"
   echo ""
   echo "    Add .gitignore to project"
   echo ""

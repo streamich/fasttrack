@@ -78,7 +78,7 @@ done
 set -- "${POSITIONAL[@]}"
 
 if [ "$HELP" = true ] ; then
-  echo "fasttrack-cli prettier [options]"
+  echo "fasttrack prettier [options]"
   echo ""
   echo " - Installs Prettier and pretty-quick"
   echo " - Adds scripts to package.json"

@@ -25,7 +25,7 @@ done
 set -- "${POSITIONAL[@]}"
 
 if [ "$HELP" = true ] ; then
-  echo "fasttrack-cli git [options]"
+  echo "fasttrack git [options]"
   echo ""
   echo "    Init Git repo and create first commit"
   echo ""

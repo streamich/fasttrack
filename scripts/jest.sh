@@ -57,7 +57,7 @@ done
 set -- "${POSITIONAL[@]}"
 
 if [ "$HELP" = true ] ; then
-  echo "fasttrack-cli jest [options]"
+  echo "fasttrack jest [options]"
   echo ""
   echo "    Install Jest"
   echo ""

@@ -34,7 +34,7 @@ done
 set -- "${POSITIONAL[@]}"
 
 if [ "$HELP" = true ] ; then
-  echo "fasttrack-cli readme [options]"
+  echo "fasttrack readme [options]"
   echo ""
   echo "    Creates README file"
   echo ""

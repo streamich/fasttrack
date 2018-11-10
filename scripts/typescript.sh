@@ -30,7 +30,7 @@ done
 set -- "${POSITIONAL[@]}"
 
 if [ "$HELP" = true ] ; then
-  echo "fasttrack-cli typescript [options]"
+  echo "fasttrack typescript [options]"
   echo ""
   echo "    Adds TypeScript to project"
   echo ""

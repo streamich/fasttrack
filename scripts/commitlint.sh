@@ -33,7 +33,7 @@ done
 set -- "${POSITIONAL[@]}"
 
 if [ "$HELP" = true ] ; then
-  echo "fasttrack-cli commitlint [options]"
+  echo "fasttrack commitlint [options]"
   echo ""
   echo "    Adds Commitlint to project"
   echo ""
