@@ -43,3 +43,8 @@ fastrack <script> [options]
 - `ci-circleci` &mdash; Adds [CircleCI](https://circleci.com/) with automatic releases using `yarn release` command on merge to `master`.
 - `semantic-release` &mdash; Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
 - `git` &mdash; Inits [Git](https://git-scm.com/) and creates first commit.
+
+
+## License
+
+[Unlicense](LICENSE) &mdash; public domain.

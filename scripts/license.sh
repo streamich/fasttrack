@@ -92,6 +92,7 @@ if [ -f $README_FILE ]; then
   echo "Adding license to $README_FILE readme."
   cat >>$README_FILE <<EOL
 
+
 ## License
 
 [${LICENSE}](${LICENSE_FILE}) &mdash; ${LICENSE_DESCRIPTION}.
