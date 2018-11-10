@@ -27,7 +27,23 @@ fastrack <script> [options]
 - [__Usage__](./docs/usage.md)
 
 
-## `<scripts>`
+## Projects
+
+Projects simply run a collection of scripts. You can specify all CLI params
+for projects that you would use for scripts.
+
+- `project-ts` &mdash; Creates a TypeScript project, runs scripts: `package`, `readme`, `license`,
+  `typescript`, `prettier`, `tslint`, `commitlint`, `commitizen`, `gitignore`, `codegen-ts`,
+  `build-ts`, `ci-circleci`, `semantic-release`, `git`.
+
+
+## Scripts
+
+To see help run:
+
+```shell
+fasttrack <script> --help
+```
 
 - `package` &mdash; Creates `package.json`.
 - `readme` &mdash; Adds a README file.
