@@ -29,17 +29,17 @@ fastrack <script> [options]
 
 ## `<scripts>`
 
-- Adds `package.json`
-- Adds README
-- Adds license
-- Adds [Husky hooks](https://github.com/typicode/husky)
-- Adds [TypeScript](https://www.typescriptlang.org/) and `tsconfig.json`
-- Adds [Prettier](https://github.com/prettier/prettier)
-- Adds [`tslint`](https://palantir.github.io/tslint/)
-- Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) and [`git-cz`](https://github.com/streamich/git-cz) Commitizen config
-- Adds `.gitignore`
-- Creates a `/src` folder
-- Sets up TypeScript `yarn build` script to `/lib` folder
-- Adds [CircleCI](https://circleci.com/) with automatic releases using [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) on merge to `master`
-- Adds [Git](https://git-scm.com/) and creates first commit
-- And more.
+- `package` &mdash; Creates `package.json`.
+- `readme` &mdash; Adds a README file.
+- `license` &mdash; Adds license to your projects.
+- `typescript` &mdash; Installs TypeScript in your project.
+- `prettier` &mdash; Adds Prettier to your project.
+- `tslint` &mdash; Adds [`tslint`](https://palantir.github.io/tslint/) to your project.
+- `commitlint` &mdash; Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.
+- `commitizen` &mdash; Sets [`git-cz`](https://github.com/streamich/git-cz) Commitizen config.
+- `gitignore` &mdash; Adds `.gitignore` to your project.
+- `codegen-ts` &mdash; Creates sample `/src` folder with TypeScript code.
+- `build-ts` &mdash; Sets up TypeScript `yarn build` script to write output to `/lib` folder.
+- `ci-circleci` &mdash; Adds [CircleCI](https://circleci.com/) with automatic releases using `yarn release` command on merge to `master`.
+- `semantic-release` &mdash; Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
+- `git` &mdash; Inits [Git](https://git-scm.com/) and creates first commit.
