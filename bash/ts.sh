@@ -15,68 +15,12 @@ yarn global add \
   climod-json \
   climod-add-script
 
-
-# Add package.json.
 bash <(curl -s $ORIGIN/package.sh) "$@"
-# Add README.
 bash <(curl -s $ORIGIN/readme.sh) "$@"
-# Add license.
 bash <(curl -s $ORIGIN/license.sh) "$@"
-
-
-
-# Add Husky.
 echo "Adding Husky."
 yarn add --dev tslint-config-common husky
-
-
-# Add TypeScript.
-echo "Adding TypeScript."
-TYPESCRIPT_CONFIG_FILE="tsconfig.json"
-yarn add --dev tslint-config-common typescript ts-node
-cat >$TYPESCRIPT_CONFIG_FILE <<EOL
-{
-  "compilerOptions": {
-    "target": "es2018",
-    "module": "commonjs",
-    "moduleResolution": "Node",
-    "removeComments": true,
-    "noImplicitAny": false,
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "pretty": true,
-    "sourceMap": true,
-    "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmitHelpers": true,
-    "noEmitOnError": true,
-    "noErrorTruncation": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "declaration": false,
-    "lib": ["es2018", "es2017", "esnext", "dom", "esnext.asynciterable"],
-    "outDir": "./${DIST}"
-  },
-  "include": ["src"],
-  "exclude": [
-    "node_modules",
-    "${DIST}",
-    "${SRC}/__tests__",
-    "${SRC}/**/__tests__/**/*.*",
-    "${SRC}/**/__mocks__/**/*.*",
-    "*.test.ts",
-    "*.spec.ts"
-  ]
-}
-EOL
-
-
-# Add Prettier.
+bash <(curl -s $ORIGIN/typescript.sh) "$@"
 bash <(curl -s $ORIGIN/prettier.sh) "$@"
 
 
