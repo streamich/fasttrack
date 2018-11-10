@@ -39,7 +39,7 @@ fasttrack <script> --help
 - `readme` &mdash; Adds a README file.
 - `license` &mdash; Adds license to your projects.
 - `typescript` &mdash; Installs TypeScript in your project.
-- `prettier` &mdash; Adds Prettier to your project.
+- [`prettier`](./docs/prettier.md) &mdash; Adds Prettier to your project.
 - `tslint` &mdash; Adds [`tslint`](https://palantir.github.io/tslint/) to your project.
 - `commitlint` &mdash; Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.
 - `commitizen` &mdash; Sets [`git-cz`](https://github.com/streamich/git-cz) Commitizen config.
@@ -57,7 +57,7 @@ fasttrack <script> --help
 Projects are simply scripts that run a collection of other scripts. You can specify all CLI params
 for projects that you would use for scripts.
 
-- `project-ts` &mdash; Creates a TypeScript project, [__read more__](./docs/project-ts.md).
+- [`project-ts`](./docs/project-ts.md) &mdash; Creates a TypeScript project.
 
 
 ## License
