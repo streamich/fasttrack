@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
-bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/bash/$1.sh) "$@"
+SCRIPT="$1"
+shift # past script
+
+bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/bash/$SCRIPT.sh) "$@"

@@ -30,7 +30,7 @@ export fasttrack="bash <(curl -s https://raw.githubusercontent.com/streamich/fas
 Now execute commands.
 
 ```shell
-fasttrack readme --help
+bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/fasttrack) readme --help
 fasttrack prettier --help
 ...
 ```
