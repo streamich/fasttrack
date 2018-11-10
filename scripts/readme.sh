@@ -5,7 +5,7 @@
 DIRNAME=${PWD##*/}
 README_FILE="README.md"
 README_PROJECT_NAME=$DIRNAME
-README_DESCRIPTION='New project...'
+README_DESCRIPTION="New project..."
 HELP=false
 
 # Fetch CLI named params.
@@ -55,8 +55,10 @@ fi
 
 echo "Adding README."
 
+echo "Writing to $README_FILE '$README_DESCRIPTION'"
 cat >$README_FILE <<EOL
 # ${README_PROJECT_NAME}
 
 ${README_DESCRIPTION}
+
 EOL
