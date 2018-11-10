@@ -17,7 +17,7 @@ fasttrack project-ts
 ## Usage
 
 ```shell
-fastrack <script> [options]
+fasttrack <script> [options]
 ```
 
 
