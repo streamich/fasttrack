@@ -2,4 +2,4 @@
 
 Starter kit for your projects.
 
-- [__Spin up TypeScript project__](./ts)
+- [__Spin-up a TypeScript project__](./ts)

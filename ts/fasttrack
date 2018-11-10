@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 USERNAME="streamich" # GitHub username.
-LICENSE="Unlicense" # License type.
-LICENSE_FILE="LICENSE" # License file name.
+DIRNAME=${PWD##*/}
+PROJECT_NAME=$DIRNAME
 SRC="src" # Source folder.
+DIST="lib" # Distribution folder.
 
 echo Working directory: $(pwd)
 
@@ -27,10 +28,27 @@ mrm package \
   --config:github "$USERNAME"
 
 
+# README.
+echo "Adding README":
+README_FILE="README.md"
+cat >$README_FILE <<EOL
+# ${PROJECT_NAME}
+EOL
+
+
 # Add license.
 echo "Adding license."
+LICENSE="Unlicense" # License type.
+LICENSE_FILE="LICENSE" # License file name.
+LICENSE_DESCRIPTION="public domain" # Short one-line description of the license.
 climod-json --file ./package.json --key license --set "$LICENSE"
 npx mrm license --config:license "$LICENSE" --config:licenseFile $LICENSE_FILE
+cat >>$README_FILE <<EOL
+
+## License
+
+[${LICENSE}](${LICENSE_FILE}) &mdash; ${LICENSE_DESCRIPTION}.
+EOL
 
 
 # Add Husky.
@@ -96,3 +114,8 @@ module.exports = {
 };
 EOL
 
+
+# Codegen.
+echo "Adding sample code."
+mkdir $SRC
+echo "console.log('Hello world!'); // tslint:disable-line no-console" > $SRC/index.ts
