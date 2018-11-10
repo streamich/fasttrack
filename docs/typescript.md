@@ -15,5 +15,5 @@ fasttrack typescript [options]
 
 Options
     --typescript-config-file    name of TypeScript config file, defaults to tsconfig.json
-    -h, --help                show this output
+    -h, --help                  show this output
 ```
