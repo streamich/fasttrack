@@ -1,11 +1,11 @@
 This is collection of scripts you can call with
 
 ```shell
-fasttrack-cli <script>
+fasttrack <script>
 ```
 
 To see help information for some script run
 
 ```shell
-fasttrack-cli <script> --help
+fasttrack <script> --help
 ```

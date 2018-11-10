@@ -35,7 +35,7 @@ To see help run:
 fasttrack <script> --help
 ```
 
-- `package` &mdash; Creates `package.json`.
+- [`package`](./docs/package.md) &mdash; Creates `package.json`.
 - `readme` &mdash; Adds a README file.
 - `license` &mdash; Adds license to your projects.
 - `typescript` &mdash; Installs TypeScript in your project.

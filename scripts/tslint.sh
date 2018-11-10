@@ -45,13 +45,10 @@ if [ "$HELP" = true ] ; then
   exit 0
 fi
 
-
 echo "Adding TSLint."
-
 
 echo "Installing TSLint dependencies."
 yarn add --dev tslint $TSLINT_CONFIG
-
 
 echo "Adding TSLint scripts to package.json"
 # Check climod-add-script is installed.
@@ -60,7 +57,6 @@ if ! [ -x "$(command -v climod-add-script)" ]; then
 fi
 climod-add-script --name=tslint --cmd="tslint 'src/**/*.{js,jsx,ts,tsx}' -t verbose"
 climod-add-script --name=precommit --cmd="yarn tslint"
-
 
 echo "Creating TSLint config at $TSLINT_CONFIG_FILE."
 cat >$TSLINT_CONFIG_FILE <<EOL
