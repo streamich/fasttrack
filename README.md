@@ -47,7 +47,7 @@ fasttrack <script> --help
 - [`codegen-ts`](./docs/codegen-ts.md) &mdash; Creates sample `/src` folder with TypeScript code.
 - [`build-ts`](./docs/build-ts.md) &mdash; Sets up TypeScript build and clean scripts.
 - [`ci-circleci`](./docs/ci-circleci.md) &mdash; Adds [CircleCI](https://circleci.com/) with automatic releases using `yarn release` command on merge to `master`.
-- `semantic-release` &mdash; Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
+- [`semantic-release`](./docs/semantic-release.md) &mdash; Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
 - [`git`](./docs/git.md) &mdash; Inits [Git](https://git-scm.com/) and creates first commit.
 - [`jest`](./docs/jest.md) &mdash; Adds [Jest](https://jestjs.io/) to your project.
 
