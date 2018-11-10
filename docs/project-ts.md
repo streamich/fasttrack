@@ -1,10 +1,10 @@
 # TypeScript project
 
-Install default TypeScript project.
-
 Runs scripts: `package`, `readme`, `license`,
 `typescript`, `prettier`, `tslint`, `commitlint`, `commitizen`, `gitignore`, `codegen-ts`,
-`build-ts`, `ci-circleci`, `semantic-release`, `git`, `jest`
+`build-ts`, `ci-circleci`, `semantic-release`, `git`, `jest`.
+
+Install default TypeScript project.
 
 ```shell
 fasttrack project-ts
