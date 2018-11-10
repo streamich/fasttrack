@@ -46,7 +46,7 @@ if [ "$HELP" = true ] ; then
   echo ""
   echo "Options"
   echo "    --gitignore-type   gitignore file as found at https://github.com/github/gitignore, defaults to 'Node'"
-  echo "    --gitignore-file    file name, defaults to ''.gitignore'"
+  echo "    --gitignore-file   file name, defaults to ''.gitignore'"
   echo "    --dir-dist         dist folder to be added to Git ignore, defaults to 'lib'"
   echo "    -h, --help         show this output"
   exit 0

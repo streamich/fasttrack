@@ -44,7 +44,7 @@ fasttrack <script> --help
 - [`commitlint`](./docs/commitlint.md) &mdash; Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.
 - [`commitizen`](./docs/commitizen.md) &mdash; Sets [`git-cz`](https://github.com/streamich/git-cz) Commitizen config.
 - [`gitignore`](./docs/gitignore.md) &mdash; Adds `.gitignore` to your project.
-- `codegen-ts` &mdash; Creates sample `/src` folder with TypeScript code.
+- [`codegen-ts`](./docs/codegen-ts) &mdash; Creates sample `/src` folder with TypeScript code.
 - `build-ts` &mdash; Sets up TypeScript `yarn build` script to write output to `/lib` folder.
 - [`ci-circleci`](./docs/ci-circleci.md) &mdash; Adds [CircleCI](https://circleci.com/) with automatic releases using `yarn release` command on merge to `master`.
 - `semantic-release` &mdash; Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
