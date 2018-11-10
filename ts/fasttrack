@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+ORIGIN="https://github.com/streamich"
 USERNAME="streamich" # GitHub username.
 DIRNAME=${PWD##*/}
 PROJECT_NAME=$DIRNAME
