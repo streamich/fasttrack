@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ORIGIN="https://raw.githubusercontent.com/streamich/fasttrack/master/bash"
+ORIGIN="https://raw.githubusercontent.com/streamich/fasttrack/master/scripts"
 
 echo Working directory: $(pwd)
 
