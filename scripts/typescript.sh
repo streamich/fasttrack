@@ -22,6 +22,9 @@ do
       HELP=true
       shift # past argument
       ;;
+      *)
+      shift # in case of unknown argument
+      ;;
   esac
 done
 set -- "${POSITIONAL[@]}"

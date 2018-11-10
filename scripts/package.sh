@@ -15,6 +15,9 @@ do
       shift # past argument
       shift # past value
       ;;
+      *)
+      shift # in case of unknown argument
+      ;;
   esac
 done
 set -- "${POSITIONAL[@]}"
