@@ -23,21 +23,7 @@ yarn add --dev tslint-config-common husky
 bash <(curl -s $ORIGIN/typescript.sh) "$@"
 bash <(curl -s $ORIGIN/prettier.sh) "$@"
 bash <(curl -s $ORIGIN/tslint.sh) "$@"
-
-
-# Add Commitlint.
-echo "Adding Commitlint."
-COMMITLINT_CONFIG_FILE="commitlint.config.js"
-yarn add --dev @commitlint/cli @commitlint/config-conventional
-climod-add-script --name=commitmsg --cmd="commitlint -E GIT_PARAMS"
-cat >$COMMITLINT_CONFIG_FILE <<EOL
-module.exports = {
-  extends: ['@commitlint/config-conventional'],
-  rules: {
-    'subject-case': [1, 'always', 'lower-case'],
-  },
-};
-EOL
+bash <(curl -s $ORIGIN/commitlint.sh) "$@"
 
 
 # Add .gitignore.
