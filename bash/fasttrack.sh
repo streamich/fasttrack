@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ORIGIN="https://raw.githubusercontent.com/streamich/fasttrack/master/ts"
+ORIGIN="https://raw.githubusercontent.com/streamich/fasttrack/master/bash"
 USERNAME="streamich" # GitHub username.
 DIRNAME=${PWD##*/}
 PROJECT_NAME=$DIRNAME
