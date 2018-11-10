@@ -44,8 +44,7 @@ done
 set -- "${POSITIONAL[@]}"
 
 if [ "$HELP" = true ] ; then
-  echo "fasttrack-cli licens
-  e [options]"
+  echo "fasttrack-cli license [options]"
   echo ""
   echo "    Adds license to a project."
   echo ""
