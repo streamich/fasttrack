@@ -24,18 +24,7 @@ bash <(curl -s $ORIGIN/typescript.sh) "$@"
 bash <(curl -s $ORIGIN/prettier.sh) "$@"
 bash <(curl -s $ORIGIN/tslint.sh) "$@"
 bash <(curl -s $ORIGIN/commitlint.sh) "$@"
-
-
-# Add .gitignore.
-echo "Adding .gitignore file."
-GITIGNORE_TYPE="Node"
-GITIGNORE_FILE=".gitignore"
-curl -o $GITIGNORE_FILE https://raw.githubusercontent.com/github/gitignore/master/$GITIGNORE_TYPE.gitignore
-cat >>$GITIGNORE_FILE <<EOL
-
-# Build folder
-${DIST}/
-EOL
+bash <(curl -s $ORIGIN/gitignore.sh) "$@"
 
 
 # Codegen.

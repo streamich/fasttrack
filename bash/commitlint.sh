@@ -35,7 +35,7 @@ if [ "$HELP" = true ] ; then
   echo "    Adds Commitlint to project"
   echo ""
   echo "Options"
-  echo "    --commitlint-config-file      config file name, default to commitlint.config.js"
+  echo "    --commitlint-config-file    config file name, default to commitlint.config.js"
   echo "    -h, --help                  show this output"
   exit 0
 fi
