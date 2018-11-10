@@ -27,16 +27,6 @@ fastrack <script> [options]
 - [__Usage__](./docs/usage.md)
 
 
-## Projects
-
-Projects simply run a collection of scripts. You can specify all CLI params
-for projects that you would use for scripts.
-
-- `project-ts` &mdash; Creates a TypeScript project, runs scripts: `package`, `readme`, `license`,
-  `typescript`, `prettier`, `tslint`, `commitlint`, `commitizen`, `gitignore`, `codegen-ts`,
-  `build-ts`, `ci-circleci`, `semantic-release`, `git`.
-
-
 ## Scripts
 
 To see help run:
@@ -59,6 +49,17 @@ fasttrack <script> --help
 - `ci-circleci` &mdash; Adds [CircleCI](https://circleci.com/) with automatic releases using `yarn release` command on merge to `master`.
 - `semantic-release` &mdash; Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
 - `git` &mdash; Inits [Git](https://git-scm.com/) and creates first commit.
+- `jest` &mdash; Adds [Jest](https://jestjs.io/) to your project.
+
+
+## Projects
+
+Projects are simply scripts that run a collection of other scripts. You can specify all CLI params
+for projects that you would use for scripts.
+
+- `project-ts` &mdash; Creates a TypeScript project, runs scripts: `package`, `readme`, `license`,
+  `typescript`, `prettier`, `tslint`, `commitlint`, `commitizen`, `gitignore`, `codegen-ts`,
+  `build-ts`, `ci-circleci`, `semantic-release`, `git`, `jest`. [__See examples__](./docs/project-ts.md).
 
 
 ## License

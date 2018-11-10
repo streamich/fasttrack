@@ -2,6 +2,8 @@
 
 # Adds TypeScript to project.
 
+SRC="src" # Source folder.
+DIST="lib"
 TYPESCRIPT_CONFIG_FILE="tsconfig.json"
 HELP=false
 

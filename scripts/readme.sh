@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# - Creates a README file.
+# Creates a README file.
 
 DIRNAME=${PWD##*/}
 README_FILE="README.md"
