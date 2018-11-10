@@ -2,40 +2,24 @@
 
 Create TypeScript project with one command.
 
-
-## Usage with NPM
-
-First create your project folder and *cd* into it.
+Install:
 
 ```shell
-mkdir my-project
-cd my-project
+bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/install.sh)
 ```
 
-Now fast-track your project.
+Create default project:
 
 ```shell
-npx fasttrack-cli ts
+mkdir my-project && cd my-project
+fasttrack project-ts
 ```
 
 
-## Usage without NPM
+## Reference
 
-Readme script.
-
-```shell
-bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/fasttrack) \
-  readme --help
-```
-
-Prettier script.
-
-```shell
-bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/fasttrack) \
-  prettier --help
-```
-
-etc.
+- [__Installation__](./docs/installation.md)
+- [__Usage__](./docs/usage.md)
 
 
 ## Features
@@ -53,3 +37,4 @@ etc.
 - Sets up TypeScript `yarn build` script to `/lib` folder
 - Adds [CircleCI](https://circleci.com/) with automatic releases using [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) on merge to `master`
 - Adds [Git](https://git-scm.com/) and creates first commit
+- And more.
