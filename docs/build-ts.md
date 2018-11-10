@@ -3,13 +3,13 @@
 Add TypeScript build and clean scripts.
 
 ```shell
-fasttrack build-ts
+ft build-ts
 ```
 
 ## Help
 
 ```
-fasttrack build-ts [options]
+ft build-ts [options]
 
     Add TypeScript build and clean scripts.
 

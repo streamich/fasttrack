@@ -3,13 +3,13 @@
 Adds Jest test runner.
 
 ```shell
-fasttrack jest
+ft jest
 ```
 
 ## Help
 
 ```
-fasttrack jest [options]
+ft jest [options]
 
     Install Jest
 

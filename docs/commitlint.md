@@ -3,13 +3,13 @@
 Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.
 
 ```shell
-fasttrack commitlint
+ft commitlint
 ```
 
 ## Help
 
 ```
-fasttrack commitlint [options]
+ft commitlint [options]
 
     Adds Commitlint to project
 

@@ -3,13 +3,13 @@
 Add sample TypeScript *"Hello World!"* script.
 
 ```shell
-fasttrack codegen-ts
+ft codegen-ts
 ```
 
 ## Help
 
 ```
-fasttrack codegen-ts [options]
+ft codegen-ts [options]
 
     Adds sample TypeScript code.
 

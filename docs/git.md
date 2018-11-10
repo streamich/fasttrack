@@ -3,13 +3,13 @@
 Inits [Git](https://git-scm.com/) and creates first commit.
 
 ```shell
-fasttrack git
+ft git
 ```
 
 ## Help
 
 ```
-fasttrack git [options]
+ft git [options]
 
     Init Git repo and create first commit
 

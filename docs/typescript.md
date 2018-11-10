@@ -3,13 +3,13 @@
 Adds TypeScript to your project.
 
 ```shell
-fasttrack typescript
+ft typescript
 ```
 
 ## Help
 
 ```
-fasttrack typescript [options]
+ft typescript [options]
 
     Adds TypeScript to project
 

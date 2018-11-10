@@ -6,7 +6,8 @@
     "fasttrack"
   ],
   "bin": {
+    "fasttrack-cli": "fasttrack",
     "fasttrack": "fasttrack",
-    "fasttrack-cli": "fasttrack"
+    "ft": "fasttrack"
   }
 }

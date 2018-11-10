@@ -3,13 +3,13 @@
 Adds license file to your project and entries in README and `package.json`.
 
 ```shell
-fasttrack license
+ft license
 ```
 
 ## Help
 
 ```
-fasttrack license [options]
+ft license [options]
 
     Adds license to a project.
 

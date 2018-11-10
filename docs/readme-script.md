@@ -3,7 +3,7 @@
 Adds a README file to your working directory.
 
 ```shell
-fasttrack readme \
+ft readme \
   --readme-file README \
   --readme-description "My new super project."
 ```
@@ -11,7 +11,7 @@ fasttrack readme \
 ## Help
 
 ```
-fasttrack readme [options]
+ft readme [options]
 
     Creates README file
 

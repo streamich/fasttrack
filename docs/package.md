@@ -3,13 +3,13 @@
 Adds `package.json` to your working directory.
 
 ```shell
-fasttrack package --username <github-username>
+ft package --username <github-username>
 ```
 
 ## Help
 
 ```
-fasttrack package [options]
+ft package [options]
 
     Creates package.json file
 

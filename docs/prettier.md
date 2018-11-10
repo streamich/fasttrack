@@ -3,13 +3,13 @@
 Add Prettier to your project.
 
 ```shell
-fasttrack prettier
+ft prettier
 ```
 
 Customize Prettier.
 
 ```shell
-fasttrack prettier \
+ft prettier \
   --prettier-config prettier.js \
   --prettier-semi false \
   --prettier-bracket-spacing true
@@ -18,7 +18,7 @@ fasttrack prettier \
 ## Help
 
 ```
-fasttrack prettier [options]
+ft prettier [options]
 
  - Installs Prettier and pretty-quick
  - Adds scripts to package.json
