@@ -22,22 +22,7 @@ echo "Adding Husky."
 yarn add --dev tslint-config-common husky
 bash <(curl -s $ORIGIN/typescript.sh) "$@"
 bash <(curl -s $ORIGIN/prettier.sh) "$@"
-
-
-# Add TSLint.
-echo "Adding TSLint."
-TSLINT_CONFIG="tslint-config-common"
-TSLINT_CONFIG_FILE="tslint.json"
-yarn add --dev tslint $TSLINT_CONFIG
-climod-add-script --name=tslint --cmd="tslint 'src/**/*.{js,jsx,ts,tsx}' -t verbose"
-climod-add-script --name=precommit --cmd="yarn tslint"
-cat >$TSLINT_CONFIG_FILE <<EOL
-{
-  "extends": [
-    "${TSLINT_CONFIG}"
-  ]
-}
-EOL
+bash <(curl -s $ORIGIN/tslint.sh) "$@"
 
 
 # Add Commitlint.
