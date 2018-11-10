@@ -1,4 +1,4 @@
-echo "Adding Prettier."
+# Adding Prettier.
 
 PRETTIER_CONFIG_FILE="prettier.config.js"
 PRETTIER_ARROW_PARENS="always"
@@ -10,6 +10,7 @@ PRETTIER_SEMI="true"
 PRETTIER_SINGLE_QUOTE="true"
 PRETTIER_BRACKET_SPACING="false"
 PRETTIER_JSX_BRACKET_SAME_LINE="false"
+HELP=false
 
 # Fetch CLI named params.
 POSITIONAL=()
@@ -62,9 +63,32 @@ do
       shift # past argument
       shift # past value
       ;;
+      -h|--help)
+      HELP=true
+      shift # past argument
+      ;;
   esac
 done
 set -- "${POSITIONAL[@]}"
+
+if [ "$HELP" = true ] ; then
+  echo "fasttrack-cli prettier [options]"
+  echo ""
+  echo "Options"
+  echo "    --prettier-config                 Config file, defaults to prettier.config.js"
+  echo "    --prettier-arrow-parens           arrowParams setting, defaults to 'always'"
+  echo "    --prettier-print-width            printWidth setting, defaults to 120"
+  echo "    --prettier-trailing-comma         trailingComma setting, defaults to 'all'"
+  echo "    --prettier-use-tabs               useTabs setting, defaults to false"
+  echo "    --prettier-semi                   semi setting, defaults to true"
+  echo "    --prettier-single-quote           singleQuote setting, defaults to true"
+  echo "    --prettier-bracket-spacing        bracketSpacing setting, defaults to false"
+  echo "    --prettier-jsx-bracket-same-line  jsxBracketSameLine setting, defaults to false"
+  echo "    -h, --help                        show this output"
+  exit 0
+fi
+
+echo "Adding Prettier."
 
 # Install `prettier` and `pretty-quick`
 yarn add --dev prettier pretty-quick
