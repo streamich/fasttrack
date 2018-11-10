@@ -1,4 +1,4 @@
-# fasttrack
+# *Fast Track*
 
 Install:
 
