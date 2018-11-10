@@ -37,8 +37,8 @@ fasttrack <script> --help
 
 - [`package`](./docs/package.md) &mdash; Creates `package.json`.
 - [`readme`](./docs/readme-script.md) &mdash; Adds a README file.
-- `license` &mdash; Adds license to your projects.
-- `typescript` &mdash; Installs TypeScript in your project.
+- [`license`](./docs/license.md) &mdash; Adds license to your projects.
+- [`typescript`](./docs/typescript.md) &mdash; Installs TypeScript in your project.
 - [`prettier`](./docs/prettier.md) &mdash; Adds Prettier to your project.
 - `tslint` &mdash; Adds [`tslint`](https://palantir.github.io/tslint/) to your project.
 - `commitlint` &mdash; Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.

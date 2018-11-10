@@ -11,7 +11,7 @@ fasttrack ci-circle-ci
 ```
 fasttrack ci-circleci [options]
 
-    Adds CircleCI image
+    Adds CircleCI config
 
 Options
     --ci-circleci-image        Docker image used in CircleCI

@@ -42,7 +42,7 @@ set -- "${POSITIONAL[@]}"
 if [ "$HELP" = true ] ; then
   echo "fasttrack ci-circleci [options]"
   echo ""
-  echo "    Adds CircleCI image"
+  echo "    Adds CircleCI config"
   echo ""
   echo "Options"
   echo "    --ci-circleci-image        Docker image used in CircleCI"
