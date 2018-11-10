@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+echo Working directory: $(pwd)
+
+# Install global dependencies.
+yarn global add mrm
+
+# TODO: git init and create .git/config
+
+echo Add package.json
+mrm package
+
+# Add Unlicense license.
+# npx mrm license --config:license Unlicense --config:licenseFile LICENSE
+
+# Add TSLint, Prettier, and Commitlint.
+# yarn global add climod-add-script
+# climod-add-script --name=tslint --cmd="tslint 'src/**/*.{js,jsx,ts,tsx}' -t verbose" \
+# climod-add-script --name=prettier --cmd="prettier --ignore-path .gitignore --write 'src/**/*.{ts,tsx,js,jsx}'" \
+# climod-add-script --name="prettier:diff" --cmd="prettier -l 'src/**/*.{ts,tsx,js,jsx}'" \
+# climod-add-script --name=commitmsg --cmd="commitlint -E GIT_PARAMS" \
+# climod-add-script --name=precommit --cmd="pretty-quick --staged && yarn tslint" \
+# climod-add-script --name=prepush --cmd="yarn prettier:diff"

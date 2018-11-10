@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+
+USERNAME="streamich" # GitHub username.
+LICENSE="Unlicense" # License type.
+LICENSE_FILE="LICENSE" # License file name.
+SRC="src" # Source folder.
+
+echo Working directory: $(pwd)
+
+# Install global dependencies.
+yarn global add \
+  mrm \
+  climod-json \
+  climod-add-script
+
+
+# Add Git.
+echo "Adding Git"
+git init
+git config user.name "$USERNAME"
+
+
+# Add package.json.
+echo "Adding package.json"
+mrm package \
+  --config:url "https://github.com/$USERNAME" \
+  --config:github "$USERNAME"
+
+
+# Add license.
+echo "Adding license."
+climod-json --file ./package.json --key license --set "$LICENSE"
+npx mrm license --config:license "$LICENSE" --config:licenseFile $LICENSE_FILE
+
+
+# Add Husky.
+echo "Adding Husky."
+yarn add --dev tslint-config-common husky
+
+
+# Add TypeScript.
+echo "Adding TypeScript."
+yarn add --dev tslint-config-common typescript ts-node
+
+
+# Add Prettier.
+echo "Adding Prettier."
+PRETTIER_CONFIG_FILE="prettier.config.js"
+cat >$PRETTIER_CONFIG_FILE <<EOL
+module.exports = {
+  arrowParens: 'always',
+  printWidth: 120,
+  tabWidth: 2,
+  useTabs: false,
+  semi: true,
+  singleQuote: true,
+  trailingComma: 'all',
+  bracketSpacing: false,
+  jsxBracketSameLine: false,
+};
+EOL
+yarn add --dev prettier pretty-quick
+climod-add-script --name=prettier --cmd="prettier --ignore-path .gitignore --write 'src/**/*.{ts,tsx,js,jsx}'"
+climod-add-script --name="prettier:diff" --cmd="prettier -l 'src/**/*.{ts,tsx,js,jsx}'"
+climod-add-script --name=prepush --cmd="yarn prettier:diff"
+climod-add-script --name=precommit --cmd="pretty-quick --staged && yarn tslint"
+
+
+# Add TSLint.
+echo "Adding TSLint."
+TSLINT_CONFIG="tslint-config-common"
+TSLINT_CONFIG_FILE="tslint.json"
+yarn add --dev tslint $TSLINT_CONFIG
+climod-add-script --name=tslint --cmd="tslint 'src/**/*.{js,jsx,ts,tsx}' -t verbose"
+climod-add-script --name=precommit --cmd="yarn tslint"
+cat >$TSLINT_CONFIG_FILE <<EOL
+{
+  "extends": [
+    "${TSLINT_CONFIG}"
+  ]
+}
+EOL
+
+
+# Add Commitlint.
+echo "Adding Commitlint."
+COMMITLINT_CONFIG_FILE="commitlint.config.js"
+yarn add --dev @commitlint/cli @commitlint/config-conventional
+climod-add-script --name=commitmsg --cmd="commitlint -E GIT_PARAMS"
+cat >$COMMITLINT_CONFIG_FILE <<EOL
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    'subject-case': [1, 'always', 'lower-case'],
+  },
+};
+EOL
+
