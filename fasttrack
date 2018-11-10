@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/bash/$1.sh)
+bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/bash/$1.sh) "$@"

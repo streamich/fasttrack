@@ -18,14 +18,8 @@ yarn global add \
 
 # Add package.json.
 bash <(curl -s $ORIGIN/package.sh) "$@"
-
-
-# README.
-echo "Adding README":
-README_FILE="README.md"
-cat >$README_FILE <<EOL
-# ${PROJECT_NAME}
-EOL
+# Add README.
+bash <(curl -s $ORIGIN/readme.sh) "$@"
 
 
 # Add license.

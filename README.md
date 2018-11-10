@@ -3,7 +3,7 @@
 Create TypeScript project with one command.
 
 
-## Usage
+## Usage with NPM
 
 First create your project folder and *cd* into it.
 
@@ -17,6 +17,24 @@ Now fast-track your project.
 ```shell
 npx fasttrack-cli ts
 ```
+
+
+## Usage without NPM
+
+First install it.
+
+```shell
+export fasttrack="bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/fasttrack)"
+```
+
+Now execute commands.
+
+```shell
+fasttrack readme --help
+fasttrack prettier --help
+...
+```
+
 
 ## Features
 
