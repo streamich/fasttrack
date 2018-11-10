@@ -27,9 +27,7 @@ echo "Using GitHub username: '$USERNAME'.";
 
 # Check mrm is installed.
 if ! [ -x "$(command -v mrm)" ]; then
-  echo 'Error: mrm is not installed, run: yarn global add mrm.' >&2
-  echo 'See <https://github.com/sapegin/mrm>' >&2
-  exit 1
+  yarn global add mrm
 fi
 
 GITHUB_URL="https://github.com/$USERNAME"
