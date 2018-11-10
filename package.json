@@ -1,7 +1,14 @@
 {
   "name": "fasttrack-cli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "Unlicense",
+  "files": [
+    "fasttrack"
+  ],
+  "bin": {
+    "fasttrack": "fasttrack",
+    "fasttrack-cli": "fasttrack"
+  },
   "scripts": {
     "test": "jest2"
   }
