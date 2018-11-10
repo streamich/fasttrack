@@ -21,19 +21,21 @@ npx fasttrack-cli ts
 
 ## Usage without NPM
 
-First install it.
+Readme script.
 
 ```shell
-export fasttrack="bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/fasttrack)"
+bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/fasttrack) \
+  readme --help
 ```
 
-Now execute commands.
+Prettier script.
 
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/fasttrack) readme --help
-fasttrack prettier --help
-...
+bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/fasttrack) \
+  prettier --help
 ```
+
+etc.
 
 
 ## Features
