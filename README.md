@@ -57,9 +57,7 @@ fasttrack <script> --help
 Projects are simply scripts that run a collection of other scripts. You can specify all CLI params
 for projects that you would use for scripts.
 
-- `project-ts` &mdash; Creates a TypeScript project, runs scripts: `package`, `readme`, `license`,
-  `typescript`, `prettier`, `tslint`, `commitlint`, `commitizen`, `gitignore`, `codegen-ts`,
-  `build-ts`, `ci-circleci`, `semantic-release`, `git`, `jest`. [__See examples__](./docs/project-ts.md).
+- `project-ts` &mdash; Creates a TypeScript project, [__read more__](./docs/project-ts.md).
 
 
 ## License
