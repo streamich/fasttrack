@@ -42,7 +42,7 @@ fasttrack <script> --help
 - [`prettier`](./docs/prettier.md) &mdash; Adds Prettier to your project.
 - [`tslint`](./docs/tslint.md) &mdash; Adds [`tslint`](https://palantir.github.io/tslint/) to your project.
 - [`commitlint`](./docs/commitlint.md) &mdash; Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.
-- `commitizen` &mdash; Sets [`git-cz`](https://github.com/streamich/git-cz) Commitizen config.
+- [`commitizen`](./docs/commitizen.md) &mdash; Sets [`git-cz`](https://github.com/streamich/git-cz) Commitizen config.
 - `gitignore` &mdash; Adds `.gitignore` to your project.
 - `codegen-ts` &mdash; Creates sample `/src` folder with TypeScript code.
 - `build-ts` &mdash; Sets up TypeScript `yarn build` script to write output to `/lib` folder.
