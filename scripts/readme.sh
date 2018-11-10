@@ -5,6 +5,7 @@
 DIRNAME=${PWD##*/}
 README_FILE="README.md"
 README_PROJECT_NAME=$DIRNAME
+README_DESCRIPTION='New project...'
 HELP=false
 
 # Fetch CLI named params.
@@ -20,6 +21,11 @@ do
       ;;
       --project)
       README_PROJECT_NAME="$2"
+      shift # past argument
+      shift # past value
+      ;;
+      --readme-description)
+      README_DESCRIPTION="$2"
       shift # past argument
       shift # past value
       ;;
@@ -40,8 +46,10 @@ if [ "$HELP" = true ] ; then
   echo "    Creates README file"
   echo ""
   echo "Options"
-  echo "    --readme-file       README file name, defaults to README.md"
-  echo "    -h, --help        show this output"
+  echo "    --readme-file          README file name, defaults to README.md"
+  echo "    --readme-description   description of the project, defaults to 'New project...'"
+  echo "    --project              project name, defaults to folder name"
+  echo "    -h, --help             show this output"
   exit 0
 fi
 
