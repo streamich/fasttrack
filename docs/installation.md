@@ -11,3 +11,9 @@ Or with NPM.
 ```shell
 npm i -g fasttrack-cli
 ```
+
+Or use without installation.
+
+```shell
+npx fasttrack-cli <script> [options]
+```
