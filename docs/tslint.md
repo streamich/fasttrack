@@ -14,7 +14,7 @@ fasttrack readme [options]
     Creates README file
 
 Options
-    --tslint-config       TSLint config to use, defaults to tslint-config-common
+    --tslint-config        TSLint config to use, defaults to tslint-config-common
     --tslint-config-file   File where to set TSLint config, defaults to tslint.json
-    -h, --help        show this output
+    -h, --help             show this output
 ```
