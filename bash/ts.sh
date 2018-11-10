@@ -20,21 +20,9 @@ yarn global add \
 bash <(curl -s $ORIGIN/package.sh) "$@"
 # Add README.
 bash <(curl -s $ORIGIN/readme.sh) "$@"
-
-
 # Add license.
-echo "Adding license."
-LICENSE="Unlicense" # License type.
-LICENSE_FILE="LICENSE" # License file name.
-LICENSE_DESCRIPTION="public domain" # Short one-line description of the license.
-climod-json --file ./package.json --key license --set "$LICENSE"
-npx mrm license --config:license "$LICENSE" --config:licenseFile $LICENSE_FILE
-cat >>$README_FILE <<EOL
+bash <(curl -s $ORIGIN/license.sh) "$@"
 
-## License
-
-[${LICENSE}](${LICENSE_FILE}) &mdash; ${LICENSE_DESCRIPTION}.
-EOL
 
 
 # Add Husky.
