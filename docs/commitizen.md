@@ -3,13 +3,13 @@
 Sets Commitizen config.
 
 ```shell
-fasttrack commitizen
+ft commitizen
 ```
 
 ## Help
 
 ```
-fasttrack commitizen [options]
+ft commitizen [options]
 
     Adds Commitizen to config
 

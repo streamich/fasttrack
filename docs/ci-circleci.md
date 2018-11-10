@@ -3,13 +3,13 @@
 Adds CircleCI config.
 
 ```shell
-fasttrack ci-circle-ci
+ft ci-circle-ci
 ```
 
 ## Help
 
 ```
-fasttrack ci-circleci [options]
+ft ci-circleci [options]
 
     Adds CircleCI config
 

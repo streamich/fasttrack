@@ -3,13 +3,13 @@
 Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
 
 ```shell
-fasttrack semantic-release
+ft semantic-release
 ```
 
 ## Help
 
 ```
-fasttrack semantic-release [options]
+ft semantic-release [options]
 
     Installs semantic-release
 

@@ -1,4 +1,4 @@
-# fasttrack
+# *Fast Track*
 
 Install:
 
@@ -10,14 +10,14 @@ Create a TypeScript project:
 
 ```shell
 mkdir my-project && cd my-project
-fasttrack project-ts
+ft project-ts
 ```
 
 
 ## Usage
 
 ```shell
-fasttrack <script> [options]
+ft <script> [options]
 ```
 
 
@@ -32,7 +32,7 @@ fasttrack <script> [options]
 To see help run:
 
 ```shell
-fasttrack <script> --help
+ft <script> --help
 ```
 
 - [`package`](./docs/package.md) &mdash; Creates `package.json`.

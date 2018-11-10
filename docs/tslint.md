@@ -3,13 +3,13 @@
 Adds TSLint to your project.
 
 ```shell
-fasttrack tslint
+ft tslint
 ```
 
 ## Help
 
 ```
-fasttrack readme [options]
+ft readme [options]
 
     Creates README file
 

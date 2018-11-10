@@ -7,13 +7,13 @@ Runs scripts: `package`, `readme`, `license`,
 Install default TypeScript project.
 
 ```shell
-fasttrack project-ts
+ft project-ts
 ```
 
 Install TypeScript project with MIT license and 80 line width.
 
 ```shell
-fasttrack project-ts \
+ft project-ts \
   --license MIT \
   --prettier-print-width 80
 ```
@@ -21,7 +21,7 @@ fasttrack project-ts \
 Use any setting from child scripts.
 
 ```shell
-fasttrack project-ts \
+ft project-ts \
   --username streamich \
   --readme-file README \
   --project my-project \

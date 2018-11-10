@@ -3,13 +3,13 @@
 Adds `.gitignore` to your project.
 
 ```shell
-fasttrack gitignore
+ft gitignore
 ```
 
 ## Help
 
 ```
-fasttrack gitignore [options]
+ft gitignore [options]
 
     Add .gitignore to project
 
