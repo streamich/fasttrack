@@ -59,10 +59,13 @@ if [ "$HELP" = true ] ; then
   echo "    Install Jest"
   echo ""
   echo "Options"
-  echo "    --jest-config-file  config file name, defaults to jest.config.js"
-  echo "    --dir-src          source folder, defaults to 'src'"
-  echo "    --dir-dist         dist folder to be added to Git ignore, defaults to 'lib'"
-  echo "    -h, --help         show this output"
+  echo "    --jest-config-file        config file name, defaults to jest.config.js"
+  echo "    --jest-test-dir           main testing folder, defaults to 'src/__tests__'"
+  echo "    --jest-setup-filename     runtime setup file, defaults to 'setup.js'"
+  echo "    --jest-ts                 boolean flag, if set, will install TypeScript transform"
+  echo "    --dir-src                 source folder, defaults to 'src'"
+  echo "    --dir-dist                dist folder to be added to Git ignore, defaults to 'lib'"
+  echo "    -h, --help                show this output"
   exit 0
 fi
 
