@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ORIGIN="https://github.com/streamich"
+ORIGIN="https://raw.githubusercontent.com/streamich/fasttrack/master/ts"
 USERNAME="streamich" # GitHub username.
 DIRNAME=${PWD##*/}
 PROJECT_NAME=$DIRNAME
@@ -17,10 +17,7 @@ yarn global add \
 
 
 # Add package.json.
-echo "Adding package.json"
-mrm package \
-  --config:url "https://github.com/$USERNAME" \
-  --config:github "$USERNAME"
+bash <(curl -s $ORIGIN/package.sh) "$@"
 
 
 # README.
