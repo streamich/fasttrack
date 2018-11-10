@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "Adding package.json"
 
 # Default GitHub username to use if one not set.

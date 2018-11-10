@@ -95,26 +95,7 @@ EOL
 
 
 # Add Prettier.
-echo "Adding Prettier."
-PRETTIER_CONFIG_FILE="prettier.config.js"
-cat >$PRETTIER_CONFIG_FILE <<EOL
-module.exports = {
-  arrowParens: 'always',
-  printWidth: 120,
-  tabWidth: 2,
-  useTabs: false,
-  semi: true,
-  singleQuote: true,
-  trailingComma: 'all',
-  bracketSpacing: false,
-  jsxBracketSameLine: false,
-};
-EOL
-yarn add --dev prettier pretty-quick
-climod-add-script --name=prettier --cmd="prettier --ignore-path .gitignore --write 'src/**/*.{ts,tsx,js,jsx}'"
-climod-add-script --name="prettier:diff" --cmd="prettier -l 'src/**/*.{ts,tsx,js,jsx}'"
-climod-add-script --name=prepush --cmd="yarn prettier:diff"
-climod-add-script --name=precommit --cmd="pretty-quick --staged && yarn tslint"
+bash <(curl -s $ORIGIN/prettier.sh) "$@"
 
 
 # Add TSLint.

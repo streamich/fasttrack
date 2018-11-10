@@ -1,4 +1,7 @@
-# Adding Prettier.
+#!/usr/bin/env bash
+
+# - Installs Prettier and pretty-quick
+# - Adds scripts to package.json
 
 PRETTIER_CONFIG_FILE="prettier.config.js"
 PRETTIER_ARROW_PARENS="always"
@@ -73,6 +76,9 @@ set -- "${POSITIONAL[@]}"
 
 if [ "$HELP" = true ] ; then
   echo "fasttrack-cli prettier [options]"
+  echo ""
+  echo " - Installs Prettier and pretty-quick"
+  echo " - Adds scripts to package.json"
   echo ""
   echo "Options"
   echo "    --prettier-config                 Config file, defaults to prettier.config.js"
