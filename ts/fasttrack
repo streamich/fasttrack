@@ -15,12 +15,6 @@ yarn global add \
   climod-add-script
 
 
-# Add Git.
-echo "Adding Git"
-git init
-git config user.name "$USERNAME"
-
-
 # Add package.json.
 echo "Adding package.json"
 mrm package \
@@ -58,7 +52,48 @@ yarn add --dev tslint-config-common husky
 
 # Add TypeScript.
 echo "Adding TypeScript."
+TYPESCRIPT_CONFIG_FILE="tsconfig.json"
 yarn add --dev tslint-config-common typescript ts-node
+cat >$TYPESCRIPT_CONFIG_FILE <<EOL
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "noErrorTruncation": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "declaration": false,
+    "lib": ["es2018", "es2017", "esnext", "dom", "esnext.asynciterable"],
+    "outDir": "./${DIST}"
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "${DIST}",
+    "${SRC}/__tests__",
+    "${SRC}/**/__tests__/**/*.*",
+    "${SRC}/**/__mocks__/**/*.*",
+    "*.test.ts",
+    "*.spec.ts"
+  ]
+}
+EOL
 
 
 # Add Prettier.
@@ -115,7 +150,34 @@ module.exports = {
 EOL
 
 
+# Add .gitignore.
+echo "Adding .gitignore file."
+GITIGNORE_TYPE="Node"
+GITIGNORE_FILE=".gitignore"
+curl -o $GITIGNORE_FILE https://raw.githubusercontent.com/github/gitignore/master/$GITIGNORE_TYPE.gitignore
+
+# TODO: setup build
+# tsc
+# files: ['./lib']
+# clean
+# start
+
+
 # Codegen.
 echo "Adding sample code."
-mkdir $SRC
-echo "console.log('Hello world!'); // tslint:disable-line no-console" > $SRC/index.ts
+mkdir -p $SRC
+cat >$SRC/index.ts <<EOL
+console.log('Hello world!'); // tslint:disable-line no-console
+EOL
+
+
+# Run app.
+RUN_COMMAND="npx ts-node src/index.ts"
+echo "Running your app with $RUN_COMMAND"
+$RUN_COMMAND
+
+
+# Add Git.
+echo "Adding Git"
+git init
+git config user.name "$USERNAME"
