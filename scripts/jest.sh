@@ -106,7 +106,7 @@ cat >$JEST_CONFIG_FILE <<EOL
 module.exports = {
   verbose: true,
   testURL: 'http://localhost/',
-  setupFiles: ['<rootDir>/${DIR_TESTS_MAIN}/setup.js'],
+  setupFiles: ['<rootDir>/${JEST_TEST_DIR}/setup.js'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
 ${TS_TRANSFORM}
   transformIgnorePatterns: [],
