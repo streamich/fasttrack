@@ -36,7 +36,7 @@ if [ "$HELP" = true ] ; then
 fi
 
 echo "Installing Webpack and related dependencies."
-yarn add \
+yarn add --dev \
   webpack \
   webpack-cli \
   webpack-manifest-plugin \
