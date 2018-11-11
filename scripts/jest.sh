@@ -101,6 +101,11 @@ cat >$JEST_TEST_DIR/$JEST_SETUP_FILENAME <<EOL
 process.env.JEST = true;
 EOL
 
+echo "Add Jest sample test."
+cat >$JEST_TEST_DIR/index.spec.ts <<EOL
+xit('Jest working', () => {});
+EOL
+
 echo "Writing Jest config to $JEST_CONFIG_FILE."
 cat >$JEST_CONFIG_FILE <<EOL
 module.exports = {
