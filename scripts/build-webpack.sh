@@ -46,7 +46,7 @@ yarn add --dev \
 
 if [ "$BUILD_WEBPACK_REACT" = true] ; then
   echo "Installing TypeScript loader."
-  yarn add ts-loader
+  yarn add --dev ts-loader
 fi
 
 echo "Creating target folder '$BUILD_WEBPACK_DIR'."
