@@ -35,9 +35,10 @@ if [ "$HELP" = true ] ; then
   exit 0
 fi
 
-echo "Installing Webpack and plugins."
+echo "Installing Webpack and related dependencies."
 yarn add \
   webpack \
+  webpack-cli \
   webpack-manifest-plugin \
   webpack-pwa-manifest \
   webpack-bundle-analyzer \
