@@ -47,6 +47,7 @@ ft <script> --help
 - [`license`](./docs/license.md) &mdash; Adds license to your projects.
 - [`package`](./docs/package.md) &mdash; Creates `package.json`.
 - [`prettier`](./docs/prettier.md) &mdash; Adds Prettier to your project.
+- [`react`](./docs/react.md) &mdash; Installs [React](https://reactjs.org/).
 - [`readme`](./docs/readme-script.md) &mdash; Adds a README file.
 - [`semantic-release`](./docs/semantic-release.md) &mdash; Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
 - [`tslint`](./docs/tslint.md) &mdash; Adds [`tslint`](https://palantir.github.io/tslint/) to your project.
