@@ -25,6 +25,7 @@ bash <(curl -s $ORIGIN/ci-circleci.sh) "$@"
 bash <(curl -s $ORIGIN/semantic-release.sh) "$@"
 bash <(curl -s $ORIGIN/commitizen.sh) "$@"
 bash <(curl -s $ORIGIN/git.sh) "$@"
+bash <(curl -s $ORIGIN/github.sh) "$@"
 
 # Run app.
 RUN_COMMAND="npx ts-node src/index.ts"
