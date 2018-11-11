@@ -35,21 +35,21 @@ To see help run:
 ft <script> --help
 ```
 
-- [`package`](./docs/package.md) &mdash; Creates `package.json`.
-- [`readme`](./docs/readme-script.md) &mdash; Adds a README file.
-- [`license`](./docs/license.md) &mdash; Adds license to your projects.
-- [`typescript`](./docs/typescript.md) &mdash; Installs TypeScript in your project.
-- [`prettier`](./docs/prettier.md) &mdash; Adds Prettier to your project.
-- [`tslint`](./docs/tslint.md) &mdash; Adds [`tslint`](https://palantir.github.io/tslint/) to your project.
-- [`commitlint`](./docs/commitlint.md) &mdash; Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.
-- [`commitizen`](./docs/commitizen.md) &mdash; Sets [`git-cz`](https://github.com/streamich/git-cz) Commitizen config.
-- [`gitignore`](./docs/gitignore.md) &mdash; Adds `.gitignore` to your project.
-- [`codegen-ts`](./docs/codegen-ts.md) &mdash; Creates sample `/src` folder with TypeScript code.
 - [`build-ts`](./docs/build-ts.md) &mdash; Sets up TypeScript build and clean scripts.
 - [`ci-circleci`](./docs/ci-circleci.md) &mdash; Adds [CircleCI](https://circleci.com/) with automatic releases using `yarn release` command on merge to `master`.
-- [`semantic-release`](./docs/semantic-release.md) &mdash; Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
+- [`codegen-ts`](./docs/codegen-ts.md) &mdash; Creates sample `/src` folder with TypeScript code.
+- [`commitizen`](./docs/commitizen.md) &mdash; Sets [`git-cz`](https://github.com/streamich/git-cz) Commitizen config.
+- [`commitlint`](./docs/commitlint.md) &mdash; Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.
 - [`git`](./docs/git.md) &mdash; Inits [Git](https://git-scm.com/) and creates first commit.
+- [`gitignore`](./docs/gitignore.md) &mdash; Adds `.gitignore` to your project.
 - [`jest`](./docs/jest.md) &mdash; Adds [Jest](https://jestjs.io/) to your project.
+- [`license`](./docs/license.md) &mdash; Adds license to your projects.
+- [`package`](./docs/package.md) &mdash; Creates `package.json`.
+- [`prettier`](./docs/prettier.md) &mdash; Adds Prettier to your project.
+- [`readme`](./docs/readme-script.md) &mdash; Adds a README file.
+- [`semantic-release`](./docs/semantic-release.md) &mdash; Adds semantic [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
+- [`tslint`](./docs/tslint.md) &mdash; Adds [`tslint`](https://palantir.github.io/tslint/) to your project.
+- [`typescript`](./docs/typescript.md) &mdash; Installs TypeScript in your project.
 
 
 ## Projects
