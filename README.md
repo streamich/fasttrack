@@ -36,6 +36,7 @@ ft <script> --help
 ```
 
 - [`build-ts`](./docs/build-ts.md) &mdash; Sets up TypeScript build and clean scripts.
+- [`build-webpack`](./docs/build-webpack.md) &mdash; Sets up TypeScript build with Webpack.
 - [`ci-circleci`](./docs/ci-circleci.md) &mdash; Adds [CircleCI](https://circleci.com/) with automatic releases using `yarn release` command on merge to `master`.
 - [`ci-travis`](./docs/ci-travis.md) &mdash; Adds [Travis CI](https://travis-ci.com/) with automatic releases using `yarn release` command on merge to `master`.
 - [`codegen-ts`](./docs/codegen-ts.md) &mdash; Creates sample `/src` folder with TypeScript code.
@@ -60,6 +61,7 @@ Projects are simply scripts that run a collection of other scripts. You can spec
 for projects that you would use for scripts.
 
 - [`project-ts`](./docs/project-ts.md) &mdash; Creates a TypeScript project.
+- [`project-react-ts`](./docs/project-react-ts.md) &mdash; Creates a TypeScript project with React.
 
 
 ## License
