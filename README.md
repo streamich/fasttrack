@@ -9,11 +9,16 @@ Install:
 bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/install.sh)
 ```
 
-Create a TypeScript project:
+Create a directory.
 
 ```shell
 mkdir my-project && cd my-project
-ft project-ts
+```
+
+Create a TypeScript project:
+
+```shell
+ft ts
 ```
 
 
@@ -66,6 +71,7 @@ for projects that you would use for scripts.
 
 - [`project-ts`](./docs/project-ts.md) &mdash; Creates a TypeScript project.
 - [`project-react-ts`](./docs/project-react-ts.md) &mdash; Creates a TypeScript project with React.
+- `ts` &mdash; Alias for `project-ts`.
 
 
 ## License
