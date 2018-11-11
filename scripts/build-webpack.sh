@@ -135,7 +135,7 @@ echo "Writing Webpack entry file at '$BUILD_WEBPACK_DIR/index.tsx'."
 cat >$BUILD_WEBPACK_DIR/index.tsx <<EOL
 import * as React from 'react';
 import {render} from 'react-dom';
-import {App} from '../../src/components/App';
+import App from '../../src/components/App';
 
 const renderApp = () => {
     render(<App />, document.getElementById('app'));
