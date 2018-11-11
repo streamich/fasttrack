@@ -44,7 +44,7 @@ yarn add --dev \
   webpack-bundle-analyzer \
   webpack-dev-server
 
-if [ "$BUILD_WEBPACK_REACT" = true] ; then
+if [ "$BUILD_WEBPACK_REACT" = true ] ; then
   echo "Installing TypeScript loader."
   yarn add --dev ts-loader
 fi
