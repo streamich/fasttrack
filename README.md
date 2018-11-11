@@ -37,6 +37,7 @@ ft <script> --help
 
 - [`build-ts`](./docs/build-ts.md) &mdash; Sets up TypeScript build and clean scripts.
 - [`ci-circleci`](./docs/ci-circleci.md) &mdash; Adds [CircleCI](https://circleci.com/) with automatic releases using `yarn release` command on merge to `master`.
+- [`ci-travis`](./docs/ci-travis.md) &mdash; Adds [Travis CI](https://travis-ci.com/) with automatic releases using `yarn release` command on merge to `master`.
 - [`codegen-ts`](./docs/codegen-ts.md) &mdash; Creates sample `/src` folder with TypeScript code.
 - [`commitizen`](./docs/commitizen.md) &mdash; Sets [`git-cz`](https://github.com/streamich/git-cz) Commitizen config.
 - [`commitlint`](./docs/commitlint.md) &mdash; Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.
