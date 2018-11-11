@@ -99,7 +99,7 @@ module.exports = {
   devtool: DEV ? 'source-map' : false,
   mode: DEV ? 'development' : 'production',
   entry: {
-    index: path.join(__dirname, 'index.ts'),
+    index: path.join(__dirname, 'index.tsx'),
   },
   output: {
     filename: '[name].js',
