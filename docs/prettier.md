@@ -2,6 +2,13 @@
 
 Add Prettier to your project.
 
+- Installs `prettier` and `pretty-quick`
+- Creates `prettier.config.js` config file.
+- Adds `yarn prettier` script to format all your `/src` folder.
+- Adds `yran prettier:diff` script to verify all files in `/src` are correctly formatted.
+- Runs `yarn prettier:diff` on `prepush` hook.
+- Runs `pretty-quick` on `precommit` hook.
+
 ```shell
 ft prettier
 ```
