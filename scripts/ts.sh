@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 
 ORIGIN="https://raw.githubusercontent.com/streamich/fasttrack/master/scripts"
-SCRIPT="$1"
-shift # past script
-
-bash <(curl -s $ORIGIN/$SCRIPT.sh) "$@"
+bash <(curl -s $ORIGIN/project-ts.sh) "$@"
