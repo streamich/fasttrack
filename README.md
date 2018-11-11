@@ -46,6 +46,7 @@ ft <script> --help
 - [`commitizen`](./docs/commitizen.md) &mdash; Sets [`git-cz`](https://github.com/streamich/git-cz) Commitizen config.
 - [`commitlint`](./docs/commitlint.md) &mdash; Adds [`commitlint`](https://marionebl.github.io/commitlint/#/) to your project.
 - [`git`](./docs/git.md) &mdash; Inits [Git](https://git-scm.com/) and creates first commit.
+- [`github`](./docs/github.md) &mdash; Creates GitHub repo and pushes project.
 - [`gitignore`](./docs/gitignore.md) &mdash; Adds `.gitignore` to your project.
 - [`jest`](./docs/jest.md) &mdash; Adds [Jest](https://jestjs.io/) to your project.
 - [`license`](./docs/license.md) &mdash; Adds license to your projects.
