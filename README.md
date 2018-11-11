@@ -1,5 +1,8 @@
 # *Fast Track*
 
+FastTrack is not a single boilerplate, but a collection of scripts that
+allow you to create your custom project boilerplate.
+
 Install:
 
 ```shell
