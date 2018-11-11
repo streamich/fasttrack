@@ -27,6 +27,6 @@ bash <(curl -s $ORIGIN/build-webpack.sh) "$@"
 bash <(curl -s $ORIGIN/git.sh) "$@"
 
 # Run app.
-RUN_COMMAND="npx ts-node src/index.ts"
+RUN_COMMAND="yarn start"
 echo "Running your app with $RUN_COMMAND"
 $RUN_COMMAND
