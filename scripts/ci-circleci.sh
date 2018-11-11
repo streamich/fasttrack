@@ -2,7 +2,7 @@
 
 # Add CircleCI.
 
-CIRCLECI_IMAGE="167590677736.dkr.ecr.us-east-1.amazonaws.com/p4-ci"
+CIRCLECI_IMAGE="node:10.10"
 CIRCLECI_DIR=".circleci"
 CIRCLECI_CONFIG="config.yml"
 HELP=false
