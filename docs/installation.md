@@ -1,18 +1,18 @@
 # Installation
 
-You can use `fasttrack` without NPM.
+You can install `fasttrack` without NPM.
 
 ```shell
 bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/install.sh)
 ```
 
-Or with NPM.
+Or, install it with NPM.
 
 ```shell
 npm i -g fasttrack-cli
 ```
 
-Or use without installation.
+Or *use without installing* at all.
 
 ```shell
 npx fasttrack-cli <script> [options]

@@ -10,11 +10,11 @@ cd my-project
 See help for each `fasttrack` command using `--help` option.
 
 ```shell
-ft <command> --help
+ft <script> --help
 ```
 
 Run `fasttrack` commands.
 
 ```shell
-ft <command> [options]
+ft <cript> [options]
 ```
