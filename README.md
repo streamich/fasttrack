@@ -1,6 +1,6 @@
 # *Fast Track*
 
-FastTrack is a boilerplate for you TypeScript (or JavaScript) projects, however it is not single fits-all template,
+FastTrack is a boilerplate for your TypeScript (or JavaScript) projects, however it is not single fits-all template,
 but rather a collection of scripts that allow you to create your custom project templates.
 
 Create a directory.
@@ -22,6 +22,7 @@ ft ts
 - [__Usage__](./docs/usage.md)
 - [__Scripts__](./docs/Scripts.md)
 - [__Projects__](./docs/Projects.md)
+- [__Examples__](./docs/Examples.md)
 
 
 ## License
