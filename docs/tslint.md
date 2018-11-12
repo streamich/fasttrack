@@ -2,6 +2,11 @@
 
 Adds TSLint to your project.
 
+- Installs `tslint` and your TSLint config.
+- Creates `yarn tslint` script that will lint you `/src` folder.
+- Adds `precommit` hook to lint your project on commit.
+- Writes `tslint.json` config file.
+
 ```shell
 ft tslint
 ```
