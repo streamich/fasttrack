@@ -16,5 +16,5 @@ ft <script> --help
 Run `fasttrack` commands.
 
 ```shell
-ft <cript> [options]
+ft <script> [options]
 ```
