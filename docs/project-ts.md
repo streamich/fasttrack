@@ -2,7 +2,7 @@
 
 Runs scripts: `package`, `readme`, `license`,
 `typescript`, `prettier`, `tslint`, `commitlint`, `commitizen`, `gitignore`, `codegen-ts`,
-`build-ts`, `ci-circleci`, `semantic-release`, `git`, `jest`.
+`build-ts`, `ci-circleci`, `semantic-release`, `jest`, `git`, `github`.
 
 Install default TypeScript project.
 
