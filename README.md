@@ -1,13 +1,7 @@
 # *Fast Track*
 
-FastTrack is not a single boilerplate, but a collection of scripts that
-allow you to create your custom project boilerplate.
-
-Install:
-
-```shell
-bash <(curl -s https://raw.githubusercontent.com/streamich/fasttrack/master/install.sh)
-```
+FastTrack is a boilerplate for you TypeScript (or JavaScript) projects, however it is not single fits-all template,
+but rather a collection of scripts that allow you to create your custom project templates.
 
 Create a directory.
 
@@ -19,13 +13,6 @@ Create a TypeScript project:
 
 ```shell
 ft ts
-```
-
-
-## Usage
-
-```shell
-ft <script> [options]
 ```
 
 
