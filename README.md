@@ -73,6 +73,12 @@ for projects that you would use for scripts.
 - [`project-react-ts`](./docs/project-react-ts.md) &mdash; Creates a TypeScript project with React.
 - `ts` &mdash; Alias for `project-ts`.
 
+To create a project run below command in your poject dir.
+
+```shell
+ft <project>
+```
+
 
 ## License
 
