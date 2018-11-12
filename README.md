@@ -1,7 +1,7 @@
 # *Fast Track*
 
 FastTrack is a boilerplate for your TypeScript (or JavaScript) projects, however it is not single fits-all template,
-but rather a collection of scripts that allow you to create your custom project templates.
+but rather a collection of scripts that allow you to create custom project templates.
 
 Create a directory.
 
