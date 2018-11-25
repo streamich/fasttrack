@@ -64,6 +64,7 @@ cat >$TYPESCRIPT_CONFIG_FILE <<EOL
     "pretty": true,
     "sourceMap": false,
     "strict": true,
+    "jsx": "react",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noEmitHelpers": true,
