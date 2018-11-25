@@ -43,6 +43,7 @@ yarn add --dev \
   @storybook/addon-notes \
   @storybook/addon-knobs \
   @storybook/addon-backgrounds \
+  @babel/core \
   babel-loader \
   @storybook/react \
   react \
@@ -69,7 +70,6 @@ import React from 'react';
 import {configure, addDecorator} from '@storybook/react';
 import {setOptions} from '@storybook/addon-options';
 import backgrounds from '@storybook/addon-backgrounds';
-import {theme} from '../src/theme';
 
 setOptions({
   sortStoriesByKind: false,
@@ -85,9 +85,7 @@ setOptions({
 addDecorator(
   backgrounds([
     {name: 'White', value: '#fff', default: true},
-    {name: 'Snow', value: theme.snow[0], default: true},
-    {name: 'Steel', value: theme.steel},
-    {name: 'Black', value: theme.black},
+    {name: 'Black', value: '#000'},
   ]),
 );
 
@@ -164,4 +162,18 @@ module.exports = {
   },
   plugins: [new ForkTsCheckerWebpackPlugin()],
 };
+EOL
+
+echo "Adding sample story at /src/__story__/demo.story.tsx"
+mkdir -p src/__story__
+cat >src/__story__/demo.story.tsx <<EOL
+import * as React from 'react';
+import {storiesOf} from '@storybook/react';
+
+storiesOf('Client Passport|Demo', module)
+  .add('Default', () => {
+    return (
+      <div>Hello world!</div>
+    );
+  });
 EOL
