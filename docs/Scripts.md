@@ -23,5 +23,6 @@ ft <script> --help
 - [`react`](./react.md) &mdash; Installs [React](https://reactjs.org/).
 - [`readme`](./readme-script.md) &mdash; Adds a README file.
 - [`semantic-release`](./semantic-release.md) &mdash; Adds [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) using `yarn release` command to your project.
+- [`storybook`](./storybook.md) &mdash; Adds Storybook to your project.
 - [`tslint`](./tslint.md) &mdash; Adds [`tslint`](https://palantir.github.io/tslint/) to your project.
 - [`typescript`](./typescript.md) &mdash; Installs TypeScript in your project.

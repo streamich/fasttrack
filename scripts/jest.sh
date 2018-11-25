@@ -119,7 +119,6 @@ ${TS_TRANSFORM}
 };
 EOL
 
-
 # Check climod-add-script is installed.
 if ! [ -x "$(command -v climod-add-script)" ]; then
   yarn global add climod-add-script
