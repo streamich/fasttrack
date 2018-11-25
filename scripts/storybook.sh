@@ -43,6 +43,7 @@ yarn add --dev \
   @storybook/addon-notes \
   @storybook/addon-knobs \
   @storybook/addon-backgrounds \
+  babel-loader \
   @storybook/react \
   react \
   react-dom \
