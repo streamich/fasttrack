@@ -44,6 +44,8 @@ yarn add --dev \
   @storybook/addon-knobs \
   @storybook/addon-backgrounds \
   @storybook/react \
+  react \
+  react-dom \
   storybook-readme \
   url-loader
 
