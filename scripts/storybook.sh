@@ -48,6 +48,8 @@ yarn add --dev \
   @storybook/react \
   react \
   react-dom \
+  @types/react \
+  @types/react-dom \
   storybook-readme \
   url-loader
 
