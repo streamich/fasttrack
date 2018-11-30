@@ -55,3 +55,8 @@ GITHUB_URL="https://github.com/$USERNAME"
 mrm package \
   --config:url $GITHUB_URL \
   --config:github "$USERNAME"
+  
+if ! [ -x "$(command -v climod-json)" ]; then
+  yarn global add climod-json
+fi
+climod-json --file package.json --key version --set "0.0.1"
