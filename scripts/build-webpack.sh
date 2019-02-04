@@ -6,7 +6,7 @@ HELP=false
 BUILD_WEBPACK_REACT=true
 BUILD_WEBPACK_DIR="targets/browser"
 BUILD_WEBPACK_DIR_PUBLIC="public"
-BUILD_WEBPACK_CONFIG=$BUILD_WEBPACK_DIR/webpack.cofnig.js
+BUILD_WEBPACK_CONFIG=$BUILD_WEBPACK_DIR/webpack.config.js
 
 # Fetch CLI named params.
 POSITIONAL=()
